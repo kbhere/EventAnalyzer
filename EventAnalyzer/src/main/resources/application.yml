@@ -1,0 +1,18 @@
+
+
+spring:
+  application:
+    name: Event-Analyzer
+  datasource:
+    driver-class-name: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:file:dbInitialise;DB_CLOSE_DELAY=10000
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+  h2:
+    console.enabled: true
+server:
+  port: 8082
+

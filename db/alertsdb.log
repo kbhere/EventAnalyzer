@@ -1,0 +1,3 @@
+/*C3*/SET SCHEMA PUBLIC
+drop table if exists alerts CASCADE 
+create table alerts (id varchar(255) not null, alert boolean, duration integer not null, host varchar(255), type varchar(255), primary key (id))
